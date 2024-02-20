@@ -24,9 +24,9 @@ A project I am about to present is the result of applying the knowledge gained f
 ✔️Create collections and different levels of variables
 ✔️Perform CRUD tests for various functionalities available in the app
 ✔️Test user Authentication and Authorization: Basic Auth, JWT and Bearer Auth
-✔️Use Console in Postman to verify responses.
-✔️Write all the necessary pre-scripst and simple tests.
-✔️Perform my first e2e test of deployed app.
+✔️Use Console in Postman to verify responses
+✔️Write all the necessary pre-scripst and simple tests
+✔️**Perform my first e2e test of deployed app**
 
 
 
