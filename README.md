@@ -135,7 +135,7 @@ pm.test("Body contains comment TC1 id", function () {
 ![E2E](https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/assets/140599598/d828cfc4-d17c-4c8f-8538-ca7a76340f27)
 ***
 <p align="center"><b>🙌🏻 RUN RESULTS</b></p>
-<p align="center"><a href="https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/blob/main/REST%20API%20Demo.postman_test_run.json">Here is my collection file with results. Enjoy!</a></p>
+<p align="center"><a href="https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/blob/main/REST%20API%20Demo.postman_test_run.json">Here is my collection file with the results. Enjoy!</a></p>
 
 
 
