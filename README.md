@@ -8,7 +8,7 @@
    - [Variables](#punkt2) 
    - [User autorization](#punkt3)
    - [Test scripts - examples](#punkt4)
-   - [POSTMAN Runner test results and THE collection](#punkt5)
+   - [POSTMAN Runner test results](#punkt5)
 <hr>
 
 ### <a name='subtask1'>🎯 About the project</a>
@@ -46,18 +46,18 @@ First, we have to deploy the app on the Glitch service. The app's code is provid
 
 **Seed** | 
 --- |
-POST Create new user TU1| 
-POST Create new user TU2 |
+POST Create new Test User 1| 
+POST Create new Test User 2|
 
 |Users |Articles |Comments |Delete 
 |:- |:- |:- |:-
-|GET Get all users with Test User 1 and Test User 2 |POST Create article TA1 for Test User 1 |POST Create comment TC1 for article TA1 and Test User 1 |DELETE Delete comment TC3
-|GET Get single user Test User 1 |PUT Create article TA2 via update with Test User 2 |GET Get all comments with TC1 |DELETE Delete comment TC2
-|GET Get single user Test User 2 |GET Get all articles with TA1 and TA2 |GET Get single comment TC1 |DELETE Delete comment TC1
-|PUT Update existing Test User 1 |GET Get articles (with params user id Test User 1) |PUT Update comment TC1 for article TA1 and Test User 1 |DELETE Delete article TA2
-|PUT Update existing Test User 2 |PUT Update article TA1 |PATCH Update comment TC1 body (article TA1 and Test User 1) |DELETE Delete article TA1
-|PATCH Update user Test User 1 firstname |PATCH Update TA1 article's title |POST Create comment TC2 for article TA1 and Test User 2 |DELETE Delete Test User 2
-| | |PUT Create comment TC3 via update for Test User 2 |DELETE Delete Test User 1
+|GET Get all users with Test User 1 and Test User 2 |POST Create article Test Article 1 for Test User 1 |POST Create Test Comment 1 for Test Article 1 and Test User 1 |DELETE Delete Test Comment 3
+|GET Get single user Test User 1 |PUT Create Test Article 2 via update with Test User 2 |GET Get all comments with Test Comment 1 |DELETE Delete Test Comment 2
+|GET Get single user Test User 2 |GET Get all articles with Test Article 1 and Test Article 2 |GET Get single Test Comment 1 |DELETE Delete Test Comment 1
+|PUT Update existing Test User 1 |GET Get articles (with params user id Test User 1) |PUT Update Test Comment 1 for Test Article 1 and Test User 1 |DELETE Delete Test Article 2
+|PUT Update existing Test User 2 |PUT Update Test Article 1 |PATCH Update Test Comment 1 body (Test Article 1 and Test User 1) |DELETE Delete Test Article 1
+|PATCH Update user Test User 1 firstname |PATCH Update Test Article 1 article's title |POST Create Test Comment 2 for Test Article 1 and Test User 2 |DELETE Delete Test User 2
+| | |PUT Create Test Comment 3 via update for Test User 2 |DELETE Delete Test User 1
 
 <a name='punkt2'>**📌 Variables**</a>
 - Creating enviroment variable for my URL base.
@@ -94,8 +94,12 @@ pm.collectionVariables.set("commentTC1Id", commentTC1Id);
 }
 ```
 <a name='punkt3'>**📌 User autorization**</a>
-
-Applying previously set variables for authorization purposes. Some functionalities require user authorization. By filling in all the required data (or in this case appropriate collection variables) using Basic Auth authorization, we are able to perform the required requests and tests of other functionalities to which the user is authorized like for exemple adding a comment etc.
+- **Authorization Process:**
+   - Applying previously set variables is crucial for user authorization. We ensure that all necessary data, including collection variables, is appropriately filled in to meet the authorization requirements. Utilizing Basic Auth, we facilitate the authorization process.
+- **Execution of Authorized Functionalities:**
+   - Once the authorization process is completed, we gain the ability to execute requests and tests on authorized functionalities. These functionalities are accessible to the user based on their authorization level.
+- **Example Functionality:**
+   - For instance, one such authorized functionality could involve adding a comment. By following the authorization process, users can seamlessly access and utilize various features within the system.
 
 <a name='punkt4'>**📌 Test scripts - examples**</a>
 
@@ -131,7 +135,7 @@ pm.test("Body contains comment TC1 id", function () {
     pm.expect(textData).to.include(`"id": ${commentTC1Id}`);
 });
 ```
-<a name='punkt5'>**📌 POSTMAN Runner test results and THE collection**</a>
+<a name='punkt5'>**📌 POSTMAN Runner test results of the test collection**</a>
 ![E2E](https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/assets/140599598/d828cfc4-d17c-4c8f-8538-ca7a76340f27)
 ***
 <p align="center"><b>🙌🏻 RUN RESULTS</b></p>
