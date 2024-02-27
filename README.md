@@ -13,20 +13,20 @@
 
 ### <a name='subtask1'>🎯 About the project</a>
 
-A project I am about to present is the result of applying the knowledge gained from the module on *API testing with the Postman tool*, part of the **REST API Manual and Automation Foundation Level** course organized by [Jaktestowac.pl](https://jaktestowac.pl/). 
+This project showcases the application of knowledge gained from a module on *API testing with Postman*, part of the **REST API Manual and Automation Foundation Level** course organized by [Jaktestowac.pl](https://jaktestowac.pl/). 
 
-🧠**What have I revised and learnt in the process?**
+🧠 **What I Revised and Learned:**
 
-✔️HTTP protocole and response codes
-✔️REST API methods: GET, POST, PUT, PATCH, DELETE.
-✔️Work with API documentation on Swagger
-✔️Test REST API with Chrome DevTools
-✔️Create collections and different levels of variables
-✔️Perform CRUD tests for various functionalities available in the app
-✔️Test user Authentication and Authorization: Basic Auth, JWT and Bearer Auth
-✔️Use Console in Postman to verify responses
-✔️Write all the necessary pre-scripst and simple tests
-✔️**Perform e2e test of deployed app**
+- Understanding of the HTTP protocol and response codes
+- Familiarity with REST API methods: GET, POST, PUT, PATCH, DELETE
+- How to work with API documentation on Swagger
+- Testing REST APIs with Chrome DevTools
+- Creation of collections and different levels of variables
+- Execution of CRUD tests for various app functionalities
+- Testing of user Authentication and Authorization: Basic Auth, JWT, and Bearer Auth
+- Usage of the Postman Console to verify responses
+- Writing necessary pre-scripts and simple tests
+- **End-to-end (E2E) testing of the deployed app**
 ***
 ### <a name='subtask2'>🔍 What are we going to test? Our web app deployment</a>
 
@@ -51,13 +51,13 @@ POST Create new user TU2 |
 
 |Users |Articles |Comments |Delete 
 |:- |:- |:- |:-
-|GET Get all users with TU1 and TU2 |POST Create article TA1 for user TU1 |POST Create comment TC1 for article TA1 and user TU1 |DELETE Delete comment TC3
-|GET Get single user TU1 |PUT Create article TA2 via update with user TU2 |GET Get all comments with TC1 |DELETE Delete comment TC2
-|GET Get single user TU2 |GET Get all articles with TA1 and TA2 |GET Get single comment TC1 |DELETE Delete comment TC1
-|PUT Update existing user TU1 |GET Get articles (with params user id TU1) |PUT Update comment TC1 for article TA1 and user TU1 |DELETE Delete article TA2
-|PUT Update existing user TU2 |PUT Update article TU1 |PATCH Update comment TC1 body (article TA1 and user TU1) |DELETE Delete article TA1
-|PATCH Update user TU1 firstname |PATCH Update TA1 article's title |POST Create comment TC2 for article TA1 and user TU2 |DELETE Delete user TU2
-| | |PUT Create comment TC3 via update for user TU2 |DELETE Delete user TU1
+|GET Get all users with Test User 1 and Test User 2 |POST Create article TA1 for Test User 1 |POST Create comment TC1 for article TA1 and Test User 1 |DELETE Delete comment TC3
+|GET Get single user Test User 1 |PUT Create article TA2 via update with Test User 2 |GET Get all comments with TC1 |DELETE Delete comment TC2
+|GET Get single user Test User 2 |GET Get all articles with TA1 and TA2 |GET Get single comment TC1 |DELETE Delete comment TC1
+|PUT Update existing Test User 1 |GET Get articles (with params user id Test User 1) |PUT Update comment TC1 for article TA1 and Test User 1 |DELETE Delete article TA2
+|PUT Update existing Test User 2 |PUT Update article TA1 |PATCH Update comment TC1 body (article TA1 and Test User 1) |DELETE Delete article TA1
+|PATCH Update user Test User 1 firstname |PATCH Update TA1 article's title |POST Create comment TC2 for article TA1 and Test User 2 |DELETE Delete Test User 2
+| | |PUT Create comment TC3 via update for Test User 2 |DELETE Delete Test User 1
 
 <a name='punkt2'>**📌 Variables**</a>
 - Creating enviroment variable for my URL base.
