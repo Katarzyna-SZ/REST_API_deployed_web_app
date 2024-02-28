@@ -9,6 +9,7 @@
    - [User autorization](#punkt3)
    - [Test scripts - examples](#punkt4)
    - [POSTMAN Runner test results](#punkt5)
+   - [Summary](#punkt6)
 <hr>
 
 ### <a name='subtask1'>🎯 About the project</a>
@@ -36,6 +37,9 @@ We are going to test a web application that has been temporarily named *Rest Api
 - editing articles,
 - adding comments and their editing,
 - deleting users, articles and comments
+  
+![Articles](https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/assets/140599598/b4d1fcc2-bc41-4a9e-a979-78df4cd92639) ![Users](https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/assets/140599598/5de994f8-5cf8-41dd-b58c-b17a3674e8bc)
+
 ***
 
 ### <a name='subtask3'>🚀 Knowledge applied. E2E tests</a>
@@ -61,7 +65,7 @@ POST Create new Test User 2|
 
 <a name='punkt2'>**📌 Variables**</a>
 - Creating enviroment variable for my URL base.
-- Setting collection variables for the user TU1 (example):
+- Setting collection variables for Test User 1 (example):
 ```js
 let jsonData = pm.response.json();
 
@@ -73,13 +77,13 @@ pm.collectionVariables.set("userTU1Id", userTU1Id);
 pm.collectionVariables.set("userTU1Email", userTU1Email);
 pm.collectionVariables.set("userTU1Password", userTU1Password);
 ```
-- Setting collection variable for the article TA1 (example):
+- Setting collection variable for Test Article 1 (example):
 ```js
 let jsonData = pm.response.json();
 let articleTA1Id = jsonData.id;
 pm.collectionVariables.set("articleTA1Id", articleTA1Id);
 ```
-- Settin collection variable for the comment TC1 (example)
+- Settin collection variable for Test Comment 1 (example)
 ```js
 let jsonData = pm.response.json();
 let commentTC1Id = jsonData.id;
@@ -141,7 +145,15 @@ pm.test("Body contains comment TC1 id", function () {
 <p align="center"><b>🙌🏻 RUN RESULTS</b></p>
 <p align="center"><a href="https://github.com/Katarzyna-SZ/REST_API_deployed_web_app/blob/main/REST%20API%20Demo.postman_test_run.json">Here is my collection file with the results. Enjoy!</a></p>
 
+***
 
+<a name='punkt6'>**📌 Summary**</a>
+
+The repository contains documentation for an API testing project conducted using Postman. Throughout the project, tests were executed with thorough validation of request results. This validation process included checking the responses not only in the Postman environment but also cross-referencing them with the API documentation available in Swagger. Additionally, the results were verified on the GUI layer of the application, ensuring consistency and accuracy across different interfaces.
+
+The documentation outlines the scope of work, which includes tasks such as creating test users, articles, and comments, as well as performing operations like updating and deleting them. It also provides examples of variables used in the testing process and explains the user authorization process.
+
+Overall, the repository serves as a comprehensive guide to API testing using Postman, demonstrating the effective application of knowledge in real-world testing scenarios.
 
 
 
